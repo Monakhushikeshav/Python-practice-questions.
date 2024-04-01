@@ -1,0 +1,113 @@
+Q: factorial
+solu:
+-------------
+# 4! =4*3*2*1
+# 5! =5*4*3*2*1
+x=int(input("Enter the integer number:"))
+fact=1
+for i in range(1,x+1):
+    # print("i=",i)
+    fact=fact*i
+    # print("fact=",fact)
+print("The factorial of ",x,"is",fact)
+-------------
+
+Q: alphabets into small and capital letter:
+-------
+x=input("Enter the string:")
+for i in x:
+    if(i>='A' and i<="Z"):
+        print("capital :",i)
+    elif(i==" "):
+        print("Space : ")
+    elif(i=="."):
+        print("dote:",i)
+    else:
+        print("small :",i)
+-------------
+Q: natural number and sum of natural numbers:
+---------
+x=int(input("Enter the natural number."))
+sum=0
+for i in range(1,x+1):
+    sum=sum+i
+print("The sum of n Numbers of natural number:",sum)
+-------------
+Q: check the number is armstrong or not:
+------------
+# 153 = 1^3 + 5^3 + 3^3
+# 153 = 1 + 125 + 27
+# 153 = 153
+x=153
+y=x
+sum=0
+while(x!=0):
+    ld=x%10  # for getting last digit
+    sum=sum+(ld*ld*ld)
+    x//=10
+if(y==sum):
+    print("Armstrong number:") 
+else:      
+    print("not Armstrong number:") 
+-----------
+Q: check the number is prime or not.
+-----------
+# 7 - 2,3,4,5,6
+# 11=x - 2,3,4,5,6,7,8,9,10=i
+x=int(input("Enter the number for check the prime number or not:"))
+y=True
+for i in range(2,x):
+    if(x%i==0):
+        y=False
+        break
+if(y==False):
+    print("Not Prime number")
+else:
+    print("Prime number")    
+----------------
+Q: fibonaci series.
+------
+# 0,1,1,2,3,5,8,13,21,.....
+x=0
+y=1
+num=int(input("enter the number of series:"))
+for i in range(num):
+    print(x, end="  ")
+    z=x+y
+    x=y
+    y=z
+----------
+Q: palindrom number.
+--------------
+x=int(input("enter the number:"))
+y=x
+rev=0
+while(x!=0):
+    ld=x%10
+    rev=(rev*10)+ld
+    x//=10
+if(y==rev):
+    print("Palindrom")
+else:
+    print("Not palindrom:")    
+-----------
+Q: count number of digit to an integer.
+-------
+x=int(input("enter the number:"))
+y=x
+sum=0
+while(x!=0):
+    sum+=1
+    x//=10
+print("Number of digits in",y,"is",sum)
+--------------
+Q: sum of all digits to an integer.
+--------------
+x=int(input("enter the number:"))
+y=x
+sum=0
+while(x!=0):
+    ld=x%10
+    sum+=ld
+    x//=10
+print("sum of digits in",y,"is",sum)

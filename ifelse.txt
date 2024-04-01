@@ -1,0 +1,189 @@
+# write a python program to check a number divisible by 3 and 2.
+-------------
+x=int(input("Enter the value:"))
+if(x%2==0 and x%3==0):
+    print("divisible by 3 and 2")
+else:
+    if(x%2==0):
+        print("Number is divisible by 2")
+    elif(x%3==0):    
+        print("Number is divisible by 3")
+    else:  
+        print("Not divisible by 3 and 2")
+---------------
+# 2. write a program to take age as input from user and check, Is he able to give vote or note. 
+-----------
+x=int(input("Enter your age:"))
+if(x>=18):
+    print("You can Give Vote.")
+else:
+    print("You can not Give Vote.")
+--------------------
+# 3. write a program to take year as input from user and check the entered value is leap year or not.
+----------------
+x=int(input("Enter year:"))
+if((x%100!=0 and x%4==0)):
+    print("leap year")
+elif(x%400==0):    
+    print("leap year")
+else:
+    print("Not Leap year")
+--------------------------
+# 4. write a program to take a character input from user and check the character is vowel or consonant. 
+-------------------
+x=input("Enter the charater:")
+if(x=='a' or x=='e' or x=='i' or x=='o' or x=='u' or x=='A' or x=='E' or x=='I' or x=='O' or x=='U'):
+    print("Vowels")
+else:
+    print("Consonant") 
+-----------------------------
+# 4. Write a program to check whether a number is positive, negative or zero. 
+--------------
+x=int(input("Enter the Number:"))
+if(x<0):
+    print("Negative")
+elif(x>0):
+    print("Positive")
+else:
+    print("Zero") 
+-------------
+# 5. Take three integer input from user and find smallest and largest among them. 
+------------
+x=int(input("Enter first Number:"))
+y=int(input("Enter second Number:"))
+z=int(input("Enter third Number:"))
+if(x>y and x>z):
+    print("First Number is largest:")
+elif(y>x and y>z):
+    print("Second Number is largest:")
+else:
+    print("third Number is largest:")
+
+if(x<y and x<z):
+    print("First Number is smallest:")
+elif(y<x and y<z):
+    print("Second Number is smallest:")
+else:
+    print("third Number is smallest:")
+--------------------------
+# 6. write a python program to check that the character which is entered by user is character, digit or special 
+# character.
+----------------
+x=input("Enter the character:")
+if((x>='a' and x<='z') or (x>='A' and x<='Z')):
+    print("character")
+elif(x>='0' and x<='9'):
+    print("Digit")    
+else:
+    print('special characte:')    
+---------------------- 
+# 7. write a program to enter a character from user and check, it is in uppercase or lowercase. 
+--------------
+x=input("Enter the character:")
+if((x>='a' and x<='z')):
+    print("lowercase")  
+elif((x>='A' and x<='Z')): 
+    print('Uppercase')    
+else:
+    print("Not")
+--------------------
+# 8. Write a program to input angles of a triangle and check whether triangle is valid or not. 
+----------------
+a1=int(input("Angle 1:"))
+a2=int(input("Angle 2:"))
+a3=int(input("Angle 3:"))
+if(a1+a2+a3==180):
+    print("triangle is valid")
+else:
+    print("triangle is not valid")
+-----------------------
+# 9. Take three input angle from user and check whether triangle is valid or not.
+----------------------
+a1=int(input("Angle 1:"))
+a2=int(input("Angle 2:"))
+a3=int(input("Angle 3:"))
+if(a1+a2+a3==180):
+    print("triangle is valid")
+else:
+    print("triangle is not valid")
+---------------------------
+# 10. Write a program to check whether the triangle is equilateral, isosceles or scalene triangle. 
+--------------------------
+# equilateral, isosceles or scalene triangle
+a1=int(input("Enter first angle"))
+a2=int(input("Enter second angle"))
+a3=int(input("Enter third angle"))
+if(a1==a2 and a2==a3 and (a1+a2+a3)==180):
+    print("Equilateral Trangle")
+elif((a1==a2 or a1==a3 or a2==a3) and (a1+a2+a3)==180):
+    print("Isosceles Trangle")  
+elif((a1+a2+a3)==180):
+    print("scalene triangle")  
+else:
+    print("Invalid trangle")    
+-------------------------
+# 11. Write a program to calculate profit or loss. 
+# 12. Write a program to input electricity unit charges and calculate total electricity bill according to the given 
+# condition: 
+# For first 50 units Rs. 0.50/unit 
+# For next 100 units Rs. 0.75/unit 
+# For next 100 units Rs. 1.20/unit 
+# For unit above 250 Rs. 1.50/unit 
+------------------
+x=int(input("Enter Electricity unti"))
+if(x<50):
+    print("your electricity bill is:",x*0.50)
+elif(x>=50 and x<100):
+    print("your electricity bill is:",x*0.75)
+elif(x>=100 and x<250):
+    print("your electricity bill is:",x*1.20)
+else:
+    print("your electricity bill is:",x*1.50)
+---------------------
+# 13. Write a C program to input basic salary of an employee and calculate its Gross salary according to following: 
+# Basic Salary <= 10000: HRA = 20%, DA = 10% 
+# Basic Salary <= 20000: HRA = 25%, DA = 12.5% 
+# Basic Salary > 20000: HRA = 30%, DA = 15% 
+----------------------
+x=int(input("Enter your salary:"))
+if(x<=10000):
+    HRD=(x*20)/100
+    DA=(x*10)/100
+    print(x+HRD+DA)
+elif(x>10000 and x<=20000):
+    HRD=(x*25)/100
+    DA=(x*12.5)/100
+    print(x+HRD+DA)
+else:
+    HRD=(x*30)/100
+    DA=(x*15)/100
+    print(x+HRD+DA)
+---------------------------
+# 14. Write a C program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. 
+# Calculate percentage and grade according to following: 
+# Percentage >= 90%: Grade A 
+# Percentage >= 80%: Grade B 
+# Percentage >= 70%: Grade C 
+# Percentage >= 60%: Grade D 
+# Percentage >= 40%: Grade E 
+# Percentage < 40%: Grade F
+-----------
+m1=int(input("Enter the marks of Physics"))
+m2=int(input("Enter the marks of Chemistry"))
+m3=int(input("Enter the marks of Biology"))
+m4=int(input("Enter the marks of Mathematics"))
+m5=int(input("Enter the marks of Computer"))
+per=(m1+m2+m3+m4+m5)/5
+if(per>=90):
+    print("A grade")
+elif(per<90 and per>=80):
+    print("B")    
+elif(per<80 and per>=70):
+    print("C")    
+elif(per<70 and per>=60):
+    print("D")    
+elif(per<60 and per>=50):
+    print("E")
+else:
+    print("F")  
+--------------------
